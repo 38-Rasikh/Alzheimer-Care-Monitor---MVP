@@ -1,0 +1,59 @@
+{
+  "expo": {
+    "name": "Alz Care",
+    "slug": "mobile",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/Alz-logo.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/Alz-logo.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/Alz-logo.png",
+        "backgroundColor": "#ffffff"
+      },
+      "edgeToEdgeEnabled": true,
+      "predictiveBackGestureEnabled": false,
+      "package": "com.anonymous.mobile"
+    },
+    "web": {
+      "favicon": "./assets/Alz-logo.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "249bf200-a800-48c1-a349-7cd27dfa162e"
+      }
+    },
+    "plugins": [
+      "expo-font",
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow Alz Care to access camera for face recognition and visitor identification."
+        }
+      ],
+      [
+        "expo-av",
+        {
+          "microphonePermission": "Allow Alz Care to access microphone for voice recognition."
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/Alz-logo.png",
+          "color": "#6366F1",
+          "sounds": ["./assets/notification.wav"]
+        }
+      ]
+    ]
+  }
+}
